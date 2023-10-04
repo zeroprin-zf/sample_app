@@ -21,6 +21,12 @@ class ListsController < ApplicationController
   def edit
     @list = List.find(params[:id])
   end
+  
+  def destroy
+    list = List.find(params[:id]) #データ(レコード)を一件取得
+    list.destroy #データ(レコード)削除
+    redirect_to '/lists' #投稿一覧画面へリダイレクト
+  end
 
 
   def update
