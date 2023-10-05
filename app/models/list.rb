@@ -6,4 +6,4 @@ class List < ApplicationRecord
   validates :image, presence: true
 end
 
-#
+#u
